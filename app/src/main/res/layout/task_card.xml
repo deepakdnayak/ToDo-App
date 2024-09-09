@@ -6,24 +6,34 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="35dp">
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="6dp"
+        android:background="@null"
+        android:contentDescription="Delete Task Button"
+        android:elevation="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:srcCompat="@drawable/ic_delete" />
 
-        <TextView
-            android:id="@+id/taskText"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="#4A72E7"
-            android:gravity="center"
-            android:paddingStart="20dp"
-            android:text="Task name"
-            android:textAlignment="viewStart"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,RtlCompat,RtlSymmetry" />
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@drawable/task_item"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:text="Task name"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlCompat,RtlSymmetry" />
 
 </RelativeLayout>
